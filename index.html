@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive pricing component</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="card-container">
+    <div class="card-title">
+      <h1>Simple, traffic-based pricing</h1>
+      <h4>Sign-up for our 30-day trial. No credit card required.</h4>
+    </div>
+    <div class="card">
+      <div class="card-top">
+        <span class="card-reviews">100K PAGEVIEWS</span>
+        <div class="price">
+          <span class="price-price">$16.00</span>
+          <span class="price-time"> / month</span>
+        </div>
+      </div>
+      <input type="range" name="range" id="range" min="0" max="32" value="16">
+      <div class="change-billing">
+        <span class="billing-type">Monthly Billing</span>
+        <button class="billing-changing">
+          <div class="billing-circle"></div>
+        </button>
+        <span class="billing-type">Yearly Billing</span>
+        <span class="discount discount--desktop">
+          25% discount
+        </span>
+        <span class="discount discount--mobile">
+          -25%
+        </span>
+      </div>
+      <hr>
+      <div class="trial">
+        <ul class="advantages">
+          <li class="advantages-item">Unlimited Websites</li>
+          <li class="advantages-item">100% data ownership</li>
+          <li class="advantages-item">Email reports</li>
+        </ul>
+        <button class="start-trial">Start my trial</button>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>
+</html>
